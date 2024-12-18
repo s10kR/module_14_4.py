@@ -12,7 +12,7 @@ for i in range(1, 5):
     cursor.execute("INSERT INTO Products (id, title, description, price) VALUES (?, ?, ?, ?)",
                     (i, f'Продукт {i}', f'Описание {i}', i * 100))
 
-api = "7505996508:AAFo79GlOzYuWxZQ2mC34mhL6o1M3Na7x6E"
+api = ""
 bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
